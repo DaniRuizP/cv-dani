@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Porfolio Profesional</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* VARIABLES Y RESET */
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.3);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* NAVEGACIÓN */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 10%;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo { font-weight: 800; font-size: 1.5rem; color: var(--accent); }
+
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-dim);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover { color: var(--accent); }
+
+        /* SECCIONES COMUNES */
+        section { padding: 100px 10%; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+
+        h2 { font-size: 2.5rem; margin-bottom: 2rem; position: relative; display: inline-block; }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px; left: 0;
+            width: 50px; height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        /* HERO SECTION */
+        .hero { text-align: center; }
+        .hero h1 { font-size: 4rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.25rem; color: var(--text-dim); max-width: 600px; margin: 0 auto 2rem; }
+        .btn {
+            padding: 1rem 2rem;
+            background: var(--accent);
+            color: var(--bg-color);
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 8px;
+            box-shadow: 0 0 20px var(--accent-glow);
+            transition: var(--transition);
+        }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 0 30px var(--accent-glow); }
+
+        /* PROYECTOS (GRID) */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: var(--transition);
+        }
+        .project-card:hover { transform: translateY(-10px); border-color: var(--accent); }
+
+        .project-img { height: 200px; background: #334155; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+
+        .project-info { padding: 1.5rem; }
+        .project-info h3 { margin-bottom: 0.5rem; }
+        .project-info p { color: var(--text-dim); font-size: 0.9rem; }
+
+        /* HABILIDADES (TAGS) */
+        .skills-container { display: flex; wrap: wrap; gap: 1rem; justify-content: center; }
+        .skill-tag {
+            padding: 0.5rem 1.5rem;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid var(--accent);
+            border-radius: 50px;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* CONTACTO */
+        .contact-info { text-align: center; }
+        .contact-email { font-size: 2rem; color: var(--accent); text-decoration: none; display: block; margin: 2rem 0; }
+
+        /* FOOTER */
+        footer { padding: 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); color: var(--text-dim); }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            nav ul { display: none; } /* Simplificado para el ejemplo */
+            .hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="logo">DEV.NOMBRE</div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Inicio / Hero -->
+    <section id="inicio" class="hero">
+        <h1>Hola, soy <span style="color: var(--accent);">Tu Nombre</span></h1>
+        <p>Desarrollador Full Stack apasionado por crear experiencias digitales modernas, rápidas y accesibles.</p>
+        <a href="#proyectos" class="btn">Ver mis trabajos</a>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="grid">
+            <div class="project-card">
+                <div class="project-img">🚀</div>
+                <div class="project-info">
+                    <h3>Plataforma SaaS</h3>
+                    <p>Una aplicación de gestión de tareas construida con React y Node.js.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">🎨</div>
+                <div class="project-info">
+                    <h3>E-commerce Minimalista</h3>
+                    <p>Tienda online centrada en la experiencia de usuario y velocidad.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">📊</div>
+                <div class="project-info">
+                    <h3>Dashboard Analytics</h3>
+                    <p>Visualización de datos en tiempo real usando D3.js y Firebase.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" style="text-align: center;">
+        <h2>Mis Habilidades</h2>
+        <div class="skills-container">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3 / Tailwind</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">SQL / MongoDB</span>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact-info">
+        <h2>¿Hablamos?</h2>
+        <p>Estoy disponible para nuevos proyectos y colaboraciones.</p>
+        <a href="mailto:hola@tuemail.com" class="contact-email">hola@tuemail.com</a>
+        <p>También puedes encontrarme en:</p>
+        <div style="margin-top: 1rem;">
+            <a href="#" style="color: white; margin: 0 10px;">LinkedIn</a> | 
+            <a href="#" style="color: white; margin: 0 10px;">GitHub</a> | 
+            <a href="#" style="color: white; margin: 0 10px;">Twitter</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Tu Nombre. Hecho con HTML y CSS puro.</p>
+    </footer>
+
+</body>
+</html>

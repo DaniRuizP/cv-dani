@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPOP - Personal Professional Orientation Report</title>
+    <title>IPOP - El Teu Nom</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Sidebar / Nav -->
     <nav class="sidebar">
         <div class="language-switcher">
             <select id="language-select">
@@ -18,88 +17,86 @@
                 <option value="en">English</option>
             </select>
         </div>
-
         <div class="profile-img">
-            <img src="https://via.placeholder.com/150" alt="Profile">
+            <img src="https://via.placeholder.com/150" alt="Foto">
             <h3 data-i18n="name">El Teu Nom</h3>
-            <p data-i18n="profile-title">Perfil Professional</p>
+            <p data-i18n="student-title">Estudiant ASIX / DAM / DAW</p>
         </div>
         <ul>
-            <li><a href="#autoconeixement"><i class="fas fa-user"></i> <span data-i18n="nav-self">Autoconeixement</span></a></li>
-            <li><a href="#objectiu"><i class="fas fa-bullseye"></i> <span data-i18n="nav-obj">Objectiu</span></a></li>
-            <li><a href="#mercat"><i class="fas fa-chart-line"></i> <span data-i18n="nav-market">Mercat</span></a></li>
-            <li><a href="#competencies"><i class="fas fa-star"></i> <span data-i18n="nav-skills">Competències</span></a></li>
-            <li><a href="#pla-accio"><i class="fas fa-tasks"></i> <span data-i18n="nav-plan">Pla d'Acció</span></a></li>
+            <li><a href="#inici"><i class="fas fa-home"></i> <span data-i18n="nav-1">Inici</span></a></li>
+            <li><a href="#competencies"><i class="fas fa-list-check"></i> <span data-i18n="nav-2">Competències</span></a></li>
+            <li><a href="#especialitzacio"><i class="fas fa-bullseye"></i> <span data-i18n="nav-3">Especialització</span></a></li>
+            <li><a href="#pla-formacio"><i class="fas fa-graduation-cap"></i> <span data-i18n="nav-4">Pla de Formació</span></a></li>
+            <li><a href="#contacte"><i class="fas fa-envelope"></i> <span data-i18n="nav-5">Contacte</span></a></li>
         </ul>
     </nav>
 
-    <!-- Main Content -->
     <main class="content">
-        <header>
-            <h1 data-i18n="header-title">Informe Personal d'Orientació Professional (IPOP)</h1>
-            <p data-i18n="header-subtitle">Un full de ruta per al meu desenvolupament i inserció laboral.</p>
-        </header>
+        <!-- 1. INICI -->
+        <section id="inici" class="card">
+            <h1 data-i18n="sec1-h1">Benvinguts al meu IPOP</h1>
+            <p class="intro-text" data-i18n="sec1-p1">Soc [Nom], estudiant del cicle ASIX, apassionat per la seguretat informàtica i la gestió de xarxes. Aquest espai recull el meu camí professional i els projectes realitzats.</p>
+            <div class="social-links">
+                <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#" class="btn"><i class="fas fa-file-pdf"></i> Curriculum</a>
+            </div>
+        </section>
 
-        <section id="autoconeixement" class="card">
-            <h2 data-i18n="sec1-title"><i class="fas fa-user"></i> 1. Autoconeixement</h2>
+        <!-- 2. CURRÍCULUM PER COMPETÈNCIES -->
+        <section id="competencies" class="card">
+            <h2 data-i18n="sec2-h2">Currículum per competències</h2>
             <div class="grid">
                 <div class="box">
-                    <h3 data-i18n="strengths-title">Punts Forts</h3>
-                    <ul id="strengths-list">
-                        <li data-i18n="s1">Capacitat d'aprenentatge ràpid.</li>
-                        <li data-i18n="s2">Resolució de problemes.</li>
-                        <li data-i18n="s3">Treball en equip.</li>
+                    <h3 data-i18n="sec2-h3a">Competències Tècniques</h3>
+                    <ul id="tech-skills">
+                        <li data-i18n="s-t1">Gestió de xarxes i configuració de routers.</li>
+                        <li data-i18n="s-t2">Administració de sistemes Linux/Windows.</li>
+                        <li data-i18n="s-t3">Seguretat informàtica i fortificació.</li>
                     </ul>
                 </div>
                 <div class="box">
-                    <h3 data-i18n="interests-title">Interessos</h3>
-                    <p data-i18n="interests-desc">M'apassiona la tecnologia, el disseny d'interfícies i la gestió de dades.</p>
+                    <h3 data-i18n="sec2-h3b">Competències Transversals</h3>
+                    <ul>
+                        <li data-i18n="s-tr1">Treball en equip i col·laboració.</li>
+                        <li data-i18n="s-tr2">Adaptabilitat al canvi.</li>
+                        <li data-i18n="s-tr3">Resolució de problemes sota pressió.</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section id="objectiu" class="card">
-            <h2 data-i18n="sec2-title"><i class="fas fa-bullseye"></i> 2. Objectiu Professional</h2>
-            <p data-i18n="obj-desc">El meu objectiu a curt termini és incorporar-me a una empresa del sector tecnològic com a Desenvolupador Junior.</p>
+        <!-- 3. ÀMBIT D'ESPECIALITZACIÓ -->
+        <section id="especialitzacio" class="card">
+            <h2 data-i18n="sec3-h2">Àmbit d'especialització</h2>
+            <p data-i18n="sec3-p1">Estic interessat a desenvolupar-me professionalment en la gestió de xarxes informàtiques, especialment en entorns corporatius i ciberseguretat.</p>
         </section>
 
-        <section id="mercat" class="card">
-            <h2 data-i18n="sec3-title"><i class="fas fa-chart-line"></i> 3. Anàlisi del Mercat</h2>
-            <p data-i18n="market-desc">He identificat que al sector TIC hi ha una alta demanda de perfils tècnics.</p>
-        </section>
-
-        <section id="competencies" class="card">
-            <h2 data-i18n="sec4-title"><i class="fas fa-star"></i> 4. Competències</h2>
-            <div class="skill-bar">
-                <span data-i18n="skill-comm">Comunicació</span>
-                <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+        <!-- 4. PLA DE FORMACIÓ -->
+        <section id="pla-formacio" class="card">
+            <h2 data-i18n="sec4-h2">Pla de formació o projecte professional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4 data-i18n="plan-1-t">Curt termini (1 any)</h4>
+                    <p data-i18n="plan-1-d">Finalitzar el cicle superior i obtenir la certificació Cisco CCNA.</p>
+                </div>
+                <div class="timeline-item">
+                    <h4 data-i18n="plan-2-t">Mig termini (2 anys)</h4>
+                    <p data-i18n="plan-2-d">Completar un màster en seguretat informàtica i adquirir experiència en sistemes.</p>
+                </div>
             </div>
-            <div class="skill-bar">
-                <span data-i18n="skill-eng">Anglès Tècnic</span>
-                <div class="bar"><div class="progress" style="width: 70%;"></div></div>
-            </div>
         </section>
 
-        <section id="pla-accio" class="card">
-            <h2 data-i18n="sec5-title"><i class="fas fa-tasks"></i> 5. Pla d'Acció</h2>
-            <table class="action-table">
-                <thead>
-                    <tr>
-                        <th data-i18n="th-action">Acció</th>
-                        <th data-i18n="th-deadline">Termini</th>
-                        <th data-i18n="th-success">Indicador d'èxit</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-i18n="row1-a">Actualitzar LinkedIn</td>
-                        <td data-i18n="row1-b">1 setmana</td>
-                        <td data-i18n="row1-c">Perfil completat</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- 5. CONTACTE -->
+        <section id="contacte" class="card">
+            <h2 data-i18n="sec5-h2">Contacte</h2>
+            <p data-i18n="sec5-p1">Podeu contactar-me a través dels següents canals:</p>
+            <ul class="contact-list">
+                <li><i class="fas fa-at"></i> <strong>Email:</strong> nom@exemple.com</li>
+                <li><i class="fab fa-telegram"></i> <strong>Telegram:</strong> @usuari</li>
+                <li><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> linkedin.com/in/perfil</li>
+            </ul>
         </section>
-
     </main>
 
     <script src="script.js"></script>

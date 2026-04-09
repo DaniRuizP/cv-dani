@@ -1,104 +1,82 @@
 const translations = {
     ca: {
-        nav_home: "Inici",
-        nav_skills: "Competències",
-        nav_spec: "Especialització",
-        nav_plan: "Pla de Formació",
-        nav_contact: "Contacte",
-        home_title: "Sóc [Nom], estudiant d'ASIX",
-        home_desc: "Aquest espai recull el meu camí professional i els projectes realitzats en l'àmbit de la informàtica i xarxes.",
-        home_btn_cv: "Veure CV",
-        skills_title: "Currículum per Competències",
+        nav_home: "Inici", nav_skills: "Competències", nav_spec: "Especialització", nav_plan: "Pla", nav_contact: "Contacte",
+        home_title: "Hola, sóc [Nom]",
+        home_desc: "Sóc estudiant del cicle ASIX, apassionat per la seguretat informàtica i la gestió de xarxes. Aquest espai recull el meu camí professional.",
+        skills_title: "Competències",
         skills_tech_title: "Tècniques",
         skills_soft_title: "Transversals",
-        tech_list: ["Gestió de xarxes", "Configuració de routers i switchos", "Administració de Linux/Windows", "Seguretat Informàtica"],
-        soft_list: ["Treball en equip", "Adaptabilitat al canvi", "Resolució de problemes", "Comunicació assertiva"],
+        tech_list: ["Gestió de xarxes", "Configuració de routers", "Seguretat activa"],
+        soft_list: ["Treball en equip", "Adaptabilitat", "Resolució de problemes"],
         spec_title: "Àmbit d'Especialització",
-        spec_desc: "Estic interessat a desenvolupar-me professionalment en la gestió de xarxes informàtiques, especialment en entorns corporatius i ciberseguretat.",
-        plan_title: "Pla de Formació Professional",
-        plan_step1_t: "Finalització del Cicle Formatiu (2024-2025)",
-        plan_step1_d: "Consolidar els coneixements de xarxes i sistemes operatius.",
-        plan_step2_t: "Especialització en Seguretat (2025-2026)",
-        plan_step2_d: "Realitzar un curs d'especialització en ciberseguretat o un Màster de FP.",
+        spec_desc: "Estic interessat a desenvolupar-me professionalment en la gestió de xarxes informàtiques, especialment en entorns corporatius.",
+        plan_title: "Pla Professional",
+        plan_step1_t: "Finalització ASIX",
+        plan_step1_d: "Completar el cicle amb especialitat en xarxes.",
+        plan_step2_t: "Certificacions",
+        plan_step2_d: "Obtenir el CCNA de Cisco en els propers 12 mesos.",
         contact_title: "Contacte",
-        contact_desc: "Pots contactar-me a través dels següents canals:"
+        contact_desc: "Podeu contactar-me a través del meu correu electrònic o xarxes professionals."
     },
     es: {
-        nav_home: "Inicio",
-        nav_skills: "Competencias",
-        nav_spec: "Especialización",
-        nav_plan: "Plan de Formación",
-        nav_contact: "Contacto",
-        home_title: "Soy [Nombre], estudiante de ASIX",
-        home_desc: "Este espacio recoge mi trayectoria profesional y los proyectos realizados en el ámbito de la informática y redes.",
-        home_btn_cv: "Ver CV",
-        skills_title: "Currículum por Competencias",
+        nav_home: "Inicio", nav_skills: "Competencias", nav_spec: "Especialización", nav_plan: "Plan", nav_contact: "Contacto",
+        home_title: "Hola, soy [Nombre]",
+        home_desc: "Soy estudiante del ciclo ASIX, apasionado por la seguridad informática y la gestión de redes. Este espacio recoge mi trayectoria profesional.",
+        skills_title: "Competencias",
         skills_tech_title: "Técnicas",
         skills_soft_title: "Transversales",
-        tech_list: ["Gestión de redes", "Configuración de routers y switches", "Administración Linux/Windows", "Seguridad Informática"],
-        soft_list: ["Trabajo en equipo", "Adaptabilidad al cambio", "Resolución de problemas", "Comunicación asertiva"],
+        tech_list: ["Gestión de redes", "Configuración de routers", "Seguridad activa"],
+        soft_list: ["Trabajo en equipo", "Adaptabilidad", "Resolución de problemas"],
         spec_title: "Ámbito de Especialización",
-        spec_desc: "Estoy interesado en desarrollarme profesionalmente en la gestión de redes informáticas, especialmente en entornos corporativos y ciberseguridad.",
-        plan_title: "Plan de Formación Profesional",
-        plan_step1_t: "Finalización del Ciclo Formativo (2024-2025)",
-        plan_step1_d: "Consolidar los conocimientos de redes y sistemas operativos.",
-        plan_step2_t: "Especialización en Seguridad (2025-2026)",
-        plan_step2_d: "Realizar un curso de especialización en ciberseguridad o un Máster de FP.",
+        spec_desc: "Estoy interesado en desarrollarme profesionalmente en la gestión de redes informáticas, especialmente en entornos corporativos.",
+        plan_title: "Plan Profesional",
+        plan_step1_t: "Finalización ASIX",
+        plan_step1_d: "Completar el ciclo con especialidad en redes.",
+        plan_step2_t: "Certificaciones",
+        plan_step2_d: "Obtener el CCNA de Cisco en los próximos 12 meses.",
         contact_title: "Contacto",
-        contact_desc: "Puedes contactarme a través de los siguientes canales:"
+        contact_desc: "Podéis contactarme a través de mi correo electrónico o redes profesionales."
     },
     en: {
-        nav_home: "Home",
-        nav_skills: "Skills",
-        nav_spec: "Specialization",
-        nav_plan: "Career Plan",
-        nav_contact: "Contact",
-        home_title: "I'm [Name], ASIX student",
-        home_desc: "This space showcases my professional journey and projects in the field of IT and networking.",
-        home_btn_cv: "View CV",
-        skills_title: "Competency-based CV",
+        nav_home: "Home", nav_skills: "Skills", nav_spec: "Specialization", nav_plan: "Plan", nav_contact: "Contact",
+        home_title: "Hi, I'm [Name]",
+        home_desc: "I am an ASIX student, passionate about cybersecurity and network management. This space reflects my professional path.",
+        skills_title: "Competencies",
         skills_tech_title: "Technical",
-        skills_soft_title: "Soft Skills",
-        tech_list: ["Network Management", "Router & Switch Configuration", "Linux/Windows Admin", "Cybersecurity"],
-        soft_list: ["Teamwork", "Adaptability", "Problem Solving", "Effective Communication"],
+        skills_soft_title: "Transversal",
+        tech_list: ["Network Management", "Router Configuration", "Active Security"],
+        soft_list: ["Teamwork", "Adaptability", "Problem Solving"],
         spec_title: "Specialization Area",
-        spec_desc: "I am interested in developing my career in IT network management, specifically in corporate environments and cybersecurity.",
-        plan_title: "Professional Training Plan",
-        plan_step1_t: "Completion of Degree (2024-2025)",
-        plan_step1_d: "Consolidate knowledge of networks and operating systems.",
-        plan_step2_t: "Security Specialization (2025-2026)",
-        plan_step2_d: "Complete a cybersecurity specialization course or a Vocational Master's.",
+        spec_desc: "I am interested in developing professionally in computer network management, especially in corporate environments.",
+        plan_title: "Professional Plan",
+        plan_step1_t: "Finish ASIX",
+        plan_step1_d: "Complete the degree specializing in networking.",
+        plan_step2_t: "Certifications",
+        plan_step2_d: "Obtain the Cisco CCNA certification within the next 12 months.",
         contact_title: "Contact",
-        contact_desc: "You can reach me through the following channels:"
+        contact_desc: "You can reach me via email or through my professional social networks."
     }
 };
 
 function changeLang(lang) {
-    // Cambiar textos simples
+    // Texto simple
     document.querySelectorAll('[data-key]').forEach(el => {
         const key = el.getAttribute('data-key');
-        if (translations[lang][key]) {
-            el.innerText = translations[lang][key];
-        }
+        if (translations[lang][key]) el.innerText = translations[lang][key];
     });
 
-    // Cambiar listas de competencias
+    // Listas
     const techList = document.getElementById('list-tech');
     const softList = document.getElementById('list-soft');
-    
-    techList.innerHTML = translations[lang].tech_list.map(item => `<li>${item}</li>`).join('');
-    softList.innerHTML = translations[lang].soft_list.map(item => `<li>${item}</li>`).join('');
+    techList.innerHTML = translations[lang].tech_list.map(i => `<li>${i}</li>`).join('');
+    softList.innerHTML = translations[lang].soft_list.map(i => `<li>${i}</li>`).join('');
 
-    // Actualizar botones de idioma
-    document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+    // Estilo botones
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     document.getElementById(`btn-${lang}`).classList.add('active');
-
-    // Guardar preferencia
-    localStorage.setItem('preferredLang', lang);
+    
+    document.documentElement.lang = lang;
 }
 
-// Cargar idioma inicial
-document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('preferredLang') || 'ca';
-    changeLang(savedLang);
-});
+// Inicializar
+window.onload = () => changeLang('ca');

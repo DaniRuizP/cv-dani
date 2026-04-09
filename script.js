@@ -1,134 +1,91 @@
 const translations = {
     ca: {
-        "name": "El Teu Nom",
-        "profile-title": "Perfil Professional",
-        "nav-self": "Autoconeixement",
-        "nav-obj": "Objectiu",
-        "nav-market": "Anàlisi Mercat",
-        "nav-skills": "Competències",
-        "nav-plan": "Pla d'Acció",
-        "header-title": "Informe Personal d'Orientació Professional (IPOP)",
-        "header-subtitle": "Un full de ruta per al meu desenvolupament laboral.",
-        "sec1-title": "1. Autoconeixement",
-        "strengths-title": "Punts Forts",
-        "s1": "Capacitat d'aprenentatge ràpid.",
-        "s2": "Resolució de problemes.",
-        "s3": "Treball en equip.",
-        "interests-title": "Interessos",
-        "interests-desc": "M'apassiona la tecnologia i el disseny.",
-        "sec2-title": "2. Objectiu Professional",
-        "obj-desc": "El meu objectiu és incorporar-me com a Desenvolupador Junior.",
-        "sec3-title": "3. Anàlisi del Mercat",
-        "market-desc": "He identificat que al sector TIC hi ha una alta demanda.",
-        "sec4-title": "4. Competències",
-        "skill-comm": "Comunicació",
-        "skill-eng": "Anglès Tècnic",
-        "sec5-title": "5. Pla d'Acció",
-        "th-action": "Acció",
-        "th-deadline": "Termini",
-        "th-success": "Indicador d'èxit",
-        "row1-a": "Actualitzar LinkedIn",
-        "row1-b": "1 setmana",
-        "row1-c": "Perfil completat"
+        "nav-1": "Inici", "nav-2": "Competències", "nav-3": "Especialització", "nav-4": "Pla Formació", "nav-5": "Contacte",
+        "name": "El Teu Nom", "student-title": "Estudiant ASIX",
+        "sec1-h1": "Benvinguts al meu IPOP",
+        "sec1-p1": "Soc [Nom], estudiant del cicle ASIX, apassionat per la seguretat informàtica i la gestió de xarxes. Aquest espai recull el meu camí professional i els projectes realitzats.",
+        "sec2-h2": "Currículum per competències",
+        "sec2-h3a": "Competències Tècniques",
+        "s-t1": "Gestió de xarxes i configuració de routers.",
+        "s-t2": "Administració de sistemes Linux/Windows.",
+        "s-t3": "Seguretat informàtica i fortificació.",
+        "sec2-h3b": "Competències Transversals",
+        "s-tr1": "Treball en equip i col·laboració.",
+        "s-tr2": "Adaptabilitat al canvi.",
+        "s-tr3": "Resolució de problemes sota pressió.",
+        "sec3-h2": "Àmbit d'especialització",
+        "sec3-p1": "Estic interessat a desenvolupar-me professionalment en la gestió de xarxes informàtiques, especialment en entorns corporatius.",
+        "sec4-h2": "Pla de formació o projecte professional",
+        "plan-1-t": "Curt termini (1 any)", "plan-1-d": "Finalitzar el cicle superior i obtenir la certificació Cisco CCNA.",
+        "plan-2-t": "Mig termini (2 anys)", "plan-2-d": "Completar un màster en seguretat informàtica.",
+        "sec5-h2": "Contacte", "sec5-p1": "Podeu contactar-me a través dels següents canals:"
     },
     es: {
-        "name": "Tu Nombre",
-        "profile-title": "Perfil Profesional",
-        "nav-self": "Autoconocimiento",
-        "nav-obj": "Objetivo",
-        "nav-market": "Análisis Mercado",
-        "nav-skills": "Competencias",
-        "nav-plan": "Plan de Acción",
-        "header-title": "Informe Personal de Orientación Profesional (IPOP)",
-        "header-subtitle": "Una hoja de ruta para mi desarrollo laboral.",
-        "sec1-title": "1. Autoconocimiento",
-        "strengths-title": "Puntos Fuertes",
-        "s1": "Capacidad de aprendizaje rápido.",
-        "s2": "Resolución de problemas.",
-        "s3": "Trabajo en equipo.",
-        "interests-title": "Intereses",
-        "interests-desc": "Me apasiona la tecnología y el diseño.",
-        "sec2-title": "2. Objetivo Profesional",
-        "obj-desc": "Mi objetivo es incorporarme como Desarrollador Junior.",
-        "sec3-title": "3. Análisis del Mercado",
-        "market-desc": "He identificado que en el sector TIC hay una alta demanda.",
-        "sec4-title": "4. Competencias",
-        "skill-comm": "Comunicación",
-        "skill-eng": "Inglés Técnico",
-        "sec5-title": "5. Plan de Acción",
-        "th-action": "Acción",
-        "th-deadline": "Plazo",
-        "th-success": "Indicador de éxito",
-        "row1-a": "Actualizar LinkedIn",
-        "row1-b": "1 semana",
-        "row1-c": "Perfil completado"
+        "nav-1": "Inicio", "nav-2": "Competencias", "nav-3": "Especialización", "nav-4": "Plan Formación", "nav-5": "Contacto",
+        "name": "Tu Nombre", "student-title": "Estudiante ASIX",
+        "sec1-h1": "Bienvenidos a mi IPOP",
+        "sec1-p1": "Soy [Nombre], estudiante del ciclo ASIX, apasionado por la seguridad informática y la gestión de redes. Este espacio recoge mi camino profesional y proyectos.",
+        "sec2-h2": "Currículum por competencias",
+        "sec2-h3a": "Competencias Técnicas",
+        "s-t1": "Gestión de redes y configuración de routers.",
+        "s-t2": "Administración de sistemas Linux/Windows.",
+        "s-t3": "Seguridad informática y fortificación.",
+        "sec2-h3b": "Competencias Transversales",
+        "s-tr1": "Trabajo en equipo y colaboración.",
+        "s-tr2": "Adaptabilidad al cambio.",
+        "s-tr3": "Resolución de problemas bajo presión.",
+        "sec3-h2": "Ámbito de especialización",
+        "sec3-p1": "Estoy interesado en desarrollarme profesionalmente en la gestión de redes informáticas, especialmente en entornos corporativos.",
+        "sec4-h2": "Plan de formación o proyecto profesional",
+        "plan-1-t": "Corto plazo (1 año)", "plan-1-d": "Finalizar el ciclo superior y obtener la certificación Cisco CCNA.",
+        "plan-2-t": "Medio plazo (2 años)", "plan-2-d": "Completar un máster en seguridad informática.",
+        "sec5-h2": "Contacto", "sec5-p1": "Podéis contactarme a través de los siguientes canales:"
     },
     en: {
-        "name": "Your Name",
-        "profile-title": "Professional Profile",
-        "nav-self": "Self-awareness",
-        "nav-obj": "Objective",
-        "nav-market": "Market Analysis",
-        "nav-skills": "Skills",
-        "nav-plan": "Action Plan",
-        "header-title": "Personal Professional Orientation Report (IPOP)",
-        "header-subtitle": "A roadmap for my career development.",
-        "sec1-title": "1. Self-awareness",
-        "strengths-title": "Strengths",
-        "s1": "Fast learning ability.",
-        "s2": "Problem solving.",
-        "s3": "Teamwork.",
-        "interests-title": "Interests",
-        "interests-desc": "I am passionate about technology and design.",
-        "sec2-title": "2. Professional Objective",
-        "obj-desc": "My goal is to join as a Junior Developer.",
-        "sec3-title": "3. Market Analysis",
-        "market-desc": "I have identified high demand in the IT sector.",
-        "sec4-title": "4. Skills",
-        "skill-comm": "Communication",
-        "skill-eng": "Technical English",
-        "sec5-title": "5. Action Plan",
-        "th-action": "Action",
-        "th-deadline": "Deadline",
-        "th-success": "Success Indicator",
-        "row1-a": "Update LinkedIn",
-        "row1-b": "1 week",
-        "row1-c": "Profile completed"
+        "nav-1": "Home", "nav-2": "Competencies", "nav-3": "Specialization", "nav-4": "Training Plan", "nav-5": "Contact",
+        "name": "Your Name", "student-title": "ASIX Student",
+        "sec1-h1": "Welcome to my IPOP",
+        "sec1-p1": "I am [Name], an ASIX student, passionate about IT security and network management. This space showcases my professional path and projects.",
+        "sec2-h2": "Competency-based CV",
+        "sec2-h3a": "Technical Skills",
+        "s-t1": "Network management and router configuration.",
+        "s-t2": "Linux/Windows systems administration.",
+        "s-t3": "IT security and hardening.",
+        "sec2-h3b": "Transversal Skills",
+        "s-tr1": "Teamwork and collaboration.",
+        "s-tr2": "Adaptability to change.",
+        "s-tr3": "Problem solving under pressure.",
+        "sec3-h2": "Area of Specialization",
+        "sec3-p1": "I am interested in developing professionally in computer network management, especially in corporate environments.",
+        "sec4-h2": "Training plan or professional project",
+        "plan-1-t": "Short term (1 year)", "plan-1-d": "Finish the degree and obtain the Cisco CCNA certification.",
+        "plan-2-t": "Medium term (2 years)", "plan-2-d": "Complete a master's degree in IT security.",
+        "sec5-h2": "Contact", "sec5-p1": "You can contact me through the following channels:"
     }
 };
 
-const languageSelect = document.getElementById('language-select');
+const select = document.getElementById('language-select');
 
-// Función para cambiar el idioma
-function setLanguage(lang) {
-    const elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(element => {
-        const key = element.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-            element.innerText = translations[lang][key];
-        }
+function updateLang(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        el.innerText = translations[lang][key] || el.innerText;
     });
-    // Guardar preferencia
-    localStorage.setItem('preferredLang', lang);
+    localStorage.setItem('lang', lang);
 }
 
-// Evento de cambio de selector
-languageSelect.addEventListener('change', (e) => {
-    setLanguage(e.target.value);
-});
+select.addEventListener('change', (e) => updateLang(e.target.value));
 
-// Cargar idioma preferido o por defecto (ca)
-window.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('preferredLang') || 'ca';
-    languageSelect.value = savedLang;
-    setLanguage(savedLang);
-});
+window.onload = () => {
+    const saved = localStorage.getItem('lang') || 'ca';
+    select.value = saved;
+    updateLang(saved);
+};
 
-// --- Mantener el resto de animaciones anteriores ---
-document.querySelectorAll('.sidebar a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const targetId = this.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
     });
 });

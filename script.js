@@ -1,6 +1,6 @@
 const translations = {
     ca: {
-        nav_home: "Inici", nav_skills: "Competències", nav_spec: "Especialització", nav_plan: "Pla", nav_contact: "Contacte",
+        nav_home: "Inici", nav_skills: "Competències", nav_spec: "Especialització", nav_projects: "Projectes", nav_plan: "Pla", nav_contact: "Contacte",
         home_title: "Hola, sóc en Dani",
         home_desc: "Benvinguts al meu espai professional. Sóc estudiant del segon any del cicle formatiu de grau superior en Administració de Sistemes Informàtics en Xarxa. La meva passió per la tecnologia neix de la curiositat per entendre com funcionen els dispositius digitals com els ordinadors i els seus components. M'especialitzo en la configuració de xarxes, la seguretat de la informació i la gestió de sistemes operatius, especialment Linux. Sóc una persona proactiva, amb una gran capacitat d'aprenentatge autònom i orientada a la resolució de problemes tècnics. Aquest lloc web és el meu Itinerari Professional i Orientació Professional, on documento la meva evolució, els meus projectes acadèmics i la meva visió de futur en el sector IT.",
         skills_title: "Competències",
@@ -10,6 +10,21 @@ const translations = {
         soft_list: ["Ordenat i Organitzat", "Aprenentatge ràpid i autònom", "Resolució de problemes", "Comunicació tècnica", "Empatía per l'usuari", "Adaptabilitat"],
         spec_title: "Àmbit d'Especialització",
         spec_desc: "La meva meta professional s'orienta clarament cap al sector de la ciberseguretat, un camp en constant evolució i de gran importància en l'actualitat. Gràcies als coneixements adquirits en el cicle d'ASIX sobre administració de sistemes i xarxes i de l'assignatura de seguretat bàsica, vull enfocar-me en la protecció d'infraestructures, la detecció de vulnerabilitats i la implementació de capes de seguretat robustes. M'interessa especialment la seguretat en xarxes, el hardening de sistemes i l'auditoria de seguretat, amb l'objectiu d'ajudar les empreses a prevenir ciberatacs i protegir les seves dades més sensibles.",
+        projects_title: "Projectes destacats",
+        projects_list: [
+            {
+                title: "Projecte Intermodular ASIX",
+                desc: "L'objectiu principal ha estat dissenyar, desplegar, automatitzar i assegurar una infraestructura IT completa des de zero, simulant les necessitats d'un entorn empresarial real.",
+                tech: ["Docker", "Ansible", "Virtualització", "Zabbix", "Suricata"],
+                link: "https://github.com/DaniRuizP/projecte-lluc-dani"
+            },
+            {
+                title: "Projecte BBDD i Programació",
+                desc: "Una cadena d'hotels ens ha demanat una aplicació connectada a una base de dades que pugui realitzar totes les seves tasques, amb generació de logs i mesures de seguretat.",
+                tech: ["Python", "MySQL"],
+                link: "https://github.com/DaniRuizP/motoplastic"
+            },
+        ],
         plan_title: "Pla Professional",
         plan_step1_t: "Finalització ASIX",
         plan_step1_d: "Actualment queden 2 mesos de curs i estic realitzant el projecte final.",
@@ -23,7 +38,7 @@ const translations = {
         contact_desc: "Podeu contactar-me a través del meu correu electrònic o número de telèfon."
     },
     es: {
-        nav_home: "Inicio", nav_skills: "Competencias", nav_spec: "Especialización", nav_plan: "Plan", nav_contact: "Contacto",
+        nav_home: "Inicio", nav_skills: "Competencias", nav_spec: "Especialización", nav_projects: "Proyectos", nav_plan: "Plan", nav_contact: "Contacto",
         home_title: "Hola, soy Dani",
         home_desc: "Bienvenidos en mi espacio profesional. Soy estudiante del segundo año del ciclo formativo de grado superior en Administración de Sistemas Informáticos en Red. Mi pasión por la tecnología nace de la curiosidad para entender como funcionan los dispositivos digitales como los ordenadores y sus componentes. Me especializo en la configuración de redes, la seguridad de la información y la gestión de sistemas operativos, especialmente Linux. Soy una persona proactiva, con una gran capacidad de aprendizaje autónomo y orientada a la resolución de problemas técnicos. Este sitio web es mi Itinerario Profesional y Orientación Profesional, donde documento mi evolución, mis proyectos académicos y mi visión de futuro en el sector IT.",
         skills_title: "Competencias",
@@ -33,6 +48,21 @@ const translations = {
         soft_list: ["Ordenado y organizado", "Aprendizaje rápido y autónomo", "Resolución de problemas", "Comunicación técnica", "Empatía por el usuario", "Adaptabilidad"],
         spec_title: "Ámbito de Especialización",
         spec_desc: "Mi meta profesional se orienta claramente hacia el sector de la ciberseguridad, un campo en constante evolución y de gran importancia en la actualidad. Gracias a los conocimientos adquiridos en el ciclo de ASIX sobre administración de sistemas y redes y de la asignatura de seguridad básica, quiero enfocarme en la protección de infraestructuras, la detección de vulnerabilidades y la implementación de capas de seguridad robustas. Me interesa especialmente la seguridad en redes, el hardening de sistemas y la auditoría de seguridad, con el objetivo de ayudar a las empresas a prevenir ciberataques y proteger sus datos más sensibles.",
+        projects_title: "Proyectos destacados",
+        projects_list: [
+            {
+                title: "Proyecto Intermodular ASIR",
+                desc: "El objetivo principal ha estado diseñar, desplegar, automatizar y asegurar una infraestructura IT completa desde cero, simulando las necesidades de un entorno empresarial real.",
+                tech: ["Docker", "Ansible", "Virtualitzación", "Zabbix", "Suricata"],
+                link: "https://github.com/DaniRuizP/projecte-lluc-dani"
+            },
+            {
+                title: "Proyecto BBDD y Programación",
+                desc: "Una cadena de hoteles nos ha pedido una aplicación conectada a una base de datos que pueda realizar todas sus tareas, con generación de logs y medidas de seguridad.",
+                tech: ["Python", "MySQL"],
+                link: "https://github.com/DaniRuizP/motoplastic"
+            },
+        ],
         plan_title: "Plan Profesional",
         plan_step1_t: "Finalización de ASIX",
         plan_step1_d: "Actualmente quedan 2 meses de curso y estoy realizando el proyecto final.",
@@ -46,7 +76,7 @@ const translations = {
         contact_desc: "Podéis contactarme a través de mi correo electrónico o número de teléfono."
     },
     en: {
-        nav_home: "Home", nav_skills: "Skills", nav_spec: "Specialization", nav_plan: "Plan", nav_contact: "Contact",
+        nav_home: "Home", nav_skills: "Skills", nav_spec: "Specialization", nav_projects: "Projects", nav_plan: "Plan", nav_contact: "Contact",
         home_title: "Hi, I'm Dani",
         home_desc: "Welcome to my professional space. I am a student of the second year of the higher degree training cycle in Computer Systems Network Administration. My passion for technology is born from the curiosity to understand how digital devices such as computers and their components work. I specialize in network configuration, information security and operating system management, especially Linux. I am a proactive person, with a great capacity for autonomous learning and oriented to the resolution of technical problems. This website is my Professional Itinerary and Professional Orientation, where I document my evolution, my academic projects and my vision of the future in the IT sector.",
         skills_title: "Competencies",
@@ -56,6 +86,21 @@ const translations = {
         soft_list: ["Neat and organized", "Fast and self-directed learning", "Problem solving", "Technical communication", "User empathy", "Adaptability"],
         spec_title: "Specialization Area",
         spec_desc: "My professional goal is clearly oriented towards the cybersecurity sector, a constantly evolving field of great importance today. Thanks to the knowledge acquired in the ASIX degree regarding systems and network administration and the basic security subject, I want to focus on infrastructure protection, vulnerability detection, and the implementation of robust security layers. I am particularly interested in network security, system hardening, and security auditing, with the goal of helping companies prevent cyberattacks and protect their most sensitive data.",
+        projects_title: "Featured Projects",
+        projects_list: [
+            {
+                title: "NSA Intermodular Project",
+                desc: "The main objective has been to design, deploy, automate and ensure a complete IT infrastructure from scratch, simulating the needs of a real business environment.",
+                tech: ["Docker", "Ansible", "Virtualization", "Zabbix", "Suricata"],
+                link: "https://github.com/DaniRuizP/projecte-lluc-dani"
+            },
+            {
+                title: "BBDD Project and Programming",
+                desc: "A chain of hotels has asked us for an application connected to a database that can perform all its tasks, with the generation of logs and security measures.",
+                tech: ["Python", "MySQL"],
+                link: "https://github.com/DaniRuizP/motoplastic"
+            },
+        ],
         plan_title: "Professional Plan",
         plan_step1_t: "ASIX Completion",
         plan_step1_d: "Currently, there are 2 months left in the course, and I am working on the final project.",
@@ -83,6 +128,24 @@ function changeLang(lang) {
     techList.innerHTML = translations[lang].tech_list.map(i => `<li>${i}</li>`).join('');
     softList.innerHTML = translations[lang].soft_list.map(i => `<li>${i}</li>`).join('');
 
+    const projectList = document.getElementById('project-list');
+    projectList.innerHTML = '';
+
+    translations[lang].projects_list.forEach(project => {
+        const card = document.createElement('div');
+        card.className = 'project-card';
+        
+        const tags = project.tech.map(t => `<span class="tag">${t}</span>`).join('');
+        
+        card.innerHTML = `
+            <h3>${project.title}</h3>
+            <div class="project-tags">${tags}</div>
+            <p>${project.desc}</p>
+            <a href="${project.link}" target="_blank" class="project-link">Veure projecte →</a>
+        `;
+        projectList.appendChild(card);
+    });
+    
     // Estilo botones
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
     document.getElementById(`btn-${lang}`).classList.add('active');
